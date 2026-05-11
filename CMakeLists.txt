@@ -17,6 +17,6 @@ target_include_directories(NppPluginOpenHost PRIVATE
     ${NPP_PLUGIN_INCLUDE}
     ${SCINTILLA_INCLUDE})
 target_link_libraries(NppPluginOpenHost PRIVATE "-framework Cocoa")
-set(PLUGIN_INSTALL_DIR "$ENV{HOME}/.notepad++/plugins/NppPluginOpenHost")
+set(PLUGIN_INSTALL_DIR "$ENV{HOME}/.nextpad++/plugins/NppPluginOpenHost")
 set_target_properties(NppPluginOpenHost PROPERTIES PREFIX "" SUFFIX ".dylib")
 install(TARGETS NppPluginOpenHost DESTINATION "${PLUGIN_INSTALL_DIR}")
